@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>High Low</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+
+	alert("You have 10 guesses.")
+	const answer = Math.floor(Math.random()* 10);
+	console.log(answer);
+	var guess = prompt('Your guess:');
+
+	for (var i = 9; i > 0; i--) {
+		if (answer == guess) {
+			alert("- WINNER! -")
+			break;
+		} else {
+			if (isNaN(guess)) {
+				alert("Not a number.")
+				guess = prompt('Try again. ' + i + " guesses left.")
+				i =+ 1;
+			} else {
+			guess = prompt('Try again. ' + i + " guesses left.")
+		}
+	}
+}
+
+
+
+	
+</script>
+</body>
+</html>
