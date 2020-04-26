@@ -2,9 +2,13 @@
 <html>
 <head>
 	<title>High Low</title>
+	<style>
+		body {background-color: black;}
+	</style>
 	<meta charset="utf-8">
 </head>
 <body>
+	 <button id="btn">Reset</button> 
 <script>
 
 	alert("You have 10 guesses.")
@@ -27,6 +31,13 @@
 	}
 }
 
+function reset() {
+	window.location.reload();
+} 
+
+document.getElementById("btn").onclick=function(){
+	reset();
+}
 
 
 	
